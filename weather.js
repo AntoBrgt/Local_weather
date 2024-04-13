@@ -5,6 +5,7 @@ const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 
 const weatherIcon = document.querySelector(".weather-icon");
+const card = document.querySelector(".card")
 
 async function checkWeather(city){
 
@@ -48,6 +49,7 @@ async function checkWeather(city){
             }
             else {
                 weatherIcon.src = "images/Clouds.png";
+                card.style.background = "linear-gradient(#999999, #666666)";
                 break;
             }
         
@@ -60,6 +62,7 @@ async function checkWeather(city){
 
             else {
                 weatherIcon.src = "images/Clear.png";
+                card.style.background = "linear-gradient(#ffbb00, #ff9100)";
                 break;
             }
 
@@ -73,6 +76,7 @@ async function checkWeather(city){
 
         else {
             weatherIcon.src = "images/Rain.png";
+            card.style.background = "linear-gradient(#999999, #666666)"
             break;
         }
 
@@ -83,4 +87,9 @@ searchBtn.addEventListener("click", ()=>{
     checkWeather(searchBox.value);
 })
 
+searchBox.addEventListener("keypress", (event)=>{
+    if (event.key == "Enter"){
+        checkWeather(searchBox.value);
 
+    }
+})
