@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder = "enter city name"
+            spellcheck="false">
+            <button><img src="images/search.png"></button>
+        </div>
+        <div class="weather">
+            <img src="images/blue-cloud-and-lightning-16466.png" class="weather-icon">
+            <h1 class="temp"> 22°c</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="images/thermometer-and-cold-16480.png">
+                    <div>
+                        <p class="cold">0°C</p>
+                        <p>Temperature min</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/thermometer-and-hot-16481.png">
+                    <div>
+                        <p class="hot">30 °C</p>
+                        <p>Temperature max</p>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/windy-16476.png">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind</p>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="col">
+                    <img src="images/sunrise-and-up-arrow-16478.png">
+                    <div class="sunrise">
+                        <p class="time_sunrise">07:00PM</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/sunset-and-down-arrow-16479.png">
+                    <div class="sunset">
+                        <p class="time_sunset">07:00PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+
+
+</body>
+</html>
